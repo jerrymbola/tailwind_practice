@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="scroll-smooth hover:scroll-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemarch</title>
+    <link href="/public/style.css" rel="stylesheet">
+
+    <!--Font Awesome[icons]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="flex items-center justify-between bg-white px-10 py-2 text-black w-screen">
+        <div>
+            <h1 class="text-xl font-extrabold">Logo</h1>
+        </div>
+        <ul class="flex items-center justify-end gap-6 text-base font-semibold">
+            <li class="hover:text-sky-600"><a href="#home">Home</a>
+            </li>
+            <li class="hover:text-sky-600"><a href="#about">About</a></li>
+            <li class="hover:text-sky-600"><a href="#services">Services</a></li>
+            <li class="hover:text-sky-600"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="home"
+        class="bg-gradient-to-r from-sky-500 to-indigo-500 w-screen h-screen flex justify-center items-center">
+        <div class="text-white text-center w-1/2">
+            <h1 class="text-4xl font-bold mb-5">Welcome to Our Website</h1>
+            <p class="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil maiores id modi hic rem
+                animi numquam
+                repudiandae cumque ut neque odio veniam iste, explicabo iusto consequuntur veritatis in nam molestias!
+            </p>
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services" class="w-screen h-5/6">
+        <h1 class="text-3xl font-bold m-6 text-center">Our Services</h1>
+        <div class="grid grid-cols-3 justify-center gap-8 px-10 py-2 mb-8">
+            <div class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4">
+                <img class="object-cover" src="/images/comp-set-up.png" alt="">
+                <h2 class="px-3 font-bold text-lg text-gray-700 mt-4 ">Service 1</h2>
+                <p class="px-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+            <div class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4">
+                <img class="object-cover" src="/images/Untitled (3).png" alt="">
+                <h2 class="px-3 font-bold text-lg text-gray-700 mt-4 ">Service 2</h2>
+                <p class="px-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded  text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+            <div class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4">
+                <img class="object-cover" src="/images/Untitled (4).png" alt="">
+                <h2 class="px-3 font-bold text-lg text-gray-700 mt-4 ">Service 3</h2>
+                <p class="px-5 mt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded  text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="w-screen h-5/6">
+        <h1 class="text-3xl font-bold m-6 text-center">Contact Us</h1>
+        <div class="grid grid-cols-2 justify-center px-10 py-2 mb-10">
+            <div>
+                <img class="object-cover" src="/images/comp-set-up-2.png" alt="">
+            </div>
+            <div>
+                <form class="p-4 m-5">
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                        <textarea id="message" placeholder="Enter your message"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="grid grid-cols-4 justify-center gap-8 px-10 py-2 w-screen bg-gray-300">
+        <div class="col-span-2">
+            <h3 class="font-bold">About Us</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur, magni dolorum ad ducimus
+                itaque quas impedit fuga aliquam quam.</p>
+        </div>
+        <div class="">
+            <h3 class="font-bold">Contact Info</h3>
+            <p>Town, City, Country</p>
+            <p>example@gmail.com</p>
+            <p>+254 712 345 678</p>
+        </div>
+        <div class="">
+            <h4 class="font-bold">Follow Us</h4>
+            <a href="#" class="text-2xl text-blue-500"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="#" class="text-2xl text-fuchsia-500"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="text-2xl text-blue-800"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
