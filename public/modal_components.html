@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <div class="bg-teal-500 text-white text-center py-20">
+        <h1 class="text-4xl mb-4">Welcome to Our Website</h1>
+        <p>We assist developers in comprehensively learning web development.</p>
+        <button id="openModal" class="mt-4 px-4 py-2 bg-white text-teal-500 rounded">
+            Contact Us
+        </button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content relative flex flex-col items-center text-center">
+            <div class="w-full flex justify-center items-center mb-4">
+                <h2 class="text-xl font-bold text-white">Contact Us</h2>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-800 absolute right-4 top-4">
+                    X
+                </button>
+            </div>
+            <form class="w-full mt-5">
+                <input type="text" placeholder="Your Name" class="mb-4 px-3 py-2 border rounded w-full" />
+                <input type="email" placeholder="Your Email" class="mb-4 px-3 py-2 border rounded w-full" />
+                <textarea placeholder="Your Message" class="mb-4 px-3 py-2 border rounded w-full"></textarea>
+                <button type="submit" class="mt-4 px-4 py-2 text-white bg-gray-400 rounded w-full">
+                    Send
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        const openModalButton = document.getElementById("openModal");
+        const closeModalButton = document.getElementById("closeModal");
+        const modal = document.getElementById("modal");
+
+        openModalButton.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        closeModalButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent form submission
+            modal.classList.add("hidden");
+        });
+    </script>
+</body>
+
+</html>

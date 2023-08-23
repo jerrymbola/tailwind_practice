@@ -4,21 +4,24 @@
 
 @import "tailwindcss/utilities";
 
-/* npx tailwindcss -i ./src/style.css -o ./public/style.css --watch */
+/* build command: npx tailwindcss -i ./src/style.css -o ./public/style.css --watch */
 
 @layer components {
+
+    /* Buttons */
     .btn-primary {
-        @apply py-2 px-4 bg-blue-500 text-white rounded hover: bg-blue-700 focus:outline-none;
+        @apply py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 focus:outline-none;
     }
 
     .btn-secondary {
-        @apply py-2 px-4 bg-gray-300 text-gray-700 rounded hover: bg-gray-400 focus:outline-none;
+        @apply py-2 px-4 bg-gray-300 text-gray-700 rounded hover:bg-gray-400 focus:outline-none;
     }
 
     .btn-danger {
-        @apply py-2 px-4 bg-red-500 text-white rounded hover: bg-red-700 focus:outline-none;
+        @apply py-2 px-4 bg-red-500 text-white rounded hover:bg-red-700 focus:outline-none;
     }
 
+    /* Cards */
     .card {
         @apply flex flex-col items-center text-center shadow-lg overflow-hidden rounded-lg border m-4;
     }
@@ -33,5 +36,14 @@
 
     .card:hover {
         @apply transform scale-105 transition-all duration-200 ease-in-out;
+    }
+
+    /* Modal Components and Modal Triggers */
+    .modal {
+        @apply fixed top-0 left-0 flex items-center justify-center w-full h-full bg-black bg-opacity-50;
+    }
+
+    .modal-content {
+        @apply bg-teal-500 rounded-lg p-6 max-w-sm mx-auto;
     }
 }
