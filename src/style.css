@@ -44,6 +44,7 @@
     }
 
     .modal-content {
-        @apply bg-teal-500 rounded-lg p-6 max-w-sm mx-auto;
+        /* @apply bg-teal-500 rounded-lg p-6 max-w-sm mx-auto; >> For modal_components.html */
+        @apply bg-white rounded-lg p-6 max-w-sm mx-auto; /* For responsive.html */
     }
 }

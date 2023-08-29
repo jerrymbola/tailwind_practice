@@ -1,0 +1,185 @@
+<!doctype html>
+<html class="scroll-smooth hover:scroll-auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Project</title>
+    <link href="/public/style.css" rel="stylesheet">
+
+    <!--Font Awesome[icons]-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="flex items-center justify-between bg-white px-8 lg:px-10 py-2 text-black w-screen sticky top-0 z-50">
+        <div>
+            <h1 class="text-xl lg:text-2xl font-extrabold">Logo</h1>
+        </div>
+        <ul class="flex items-center justify-end gap-3 lg:gap-8 text-base lg:text-lg font-semibold">
+            <li class="hover:text-sky-600 hover:transform hover:scale-105"><a href="#home">Home</a>
+            </li>
+            <li class="hover:text-sky-600 hover:transform hover:scale-105"><a href="#about">About</a></li>
+            <li class="hover:text-sky-600 hover:transform hover:scale-105"><a href="#services">Services</a></li>
+            <li class="hover:text-sky-600 hover:transform hover:scale-105"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!--Hero Section-->
+    <section id="home"
+        class="bg-gradient-to-r from-sky-500 to-indigo-500 w-screen h-screen flex justify-center items-center">
+        <div class="text-white text-center w-5/6 lg:w-3/5">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-5">Welcome to Our Website</h1>
+            <p class="text-lg lg:text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil maiores id
+                modi hic rem
+                animi numquam
+                repudiandae cumque ut neque odio veniam iste, explicabo iusto consequuntur veritatis in nam molestias!
+            </p>
+            <button id="openModal" class="mt-4 px-4 py-2 bg-white text-black font-semibold rounded">
+                Contact Us
+            </button>
+            <!-- Modal -->
+            <div id="modal" class="modal hidden">
+                <div class="modal-content relative flex flex-col items-center text-center">
+                    <div class="w-full flex justify-center items-center mb-4">
+                        <h2 class="text-xl font-bold text-black">Contact Us</h2>
+                        <button id="closeModal" class="text-red-500 hover:text-red-800 absolute right-4 top-4">
+                            X
+                        </button>
+                    </div>
+                    <form class="w-full mt-5">
+                        <input type="text" placeholder="Your Name" class="mb-4 px-3 py-2 border rounded w-full" />
+                        <input type="email" placeholder="Your Email" class="mb-4 px-3 py-2 border rounded w-full" />
+                        <textarea placeholder="Your Message" class="mb-4 px-3 py-2 border rounded w-full"></textarea>
+                        <button type="submit"
+                            class="mt-4 px-4 py-2 text-white bg-blue-500 font-semibold rounded w-full">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Services Section-->
+    <section id="services" class="w-screen md:h-5/6 lg:h-5/6">
+        <h1 class="text-3xl lg:text-4xl font-bold m-5 md:m-6 text-center">Our Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 justify-center px-8 gap-6 md:gap-8 md:py-2 md:mb-8">
+            <!--Card 1-->
+            <div
+                class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4 hover:transform hover:scale-105 hover:transition-all hover:duration-200">
+                <img class="object-cover w-full" src="/images/comp-set-up.png" alt="comp-set-up">
+                <h2 class="px-3 font-bold text-lg lg:text-xl text-gray-700 mt-4 ">Service 1</h2>
+                <p class="px-5 mt-2 lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+                    dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+            <!--Card 2-->
+            <div
+                class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4 hover:transform hover:scale-105 hover:transition-all hover:duration-200">
+                <img class="object-cover w-full" src="/images/Untitled (3).png" alt="comp-set-up">
+                <h2 class="px-3 font-bold text-lg lg:text-xl  text-gray-700 mt-4 ">Service 2</h2>
+                <p class="px-5 mt-2 lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+                    dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded  text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+            <!--Card 3-->
+            <div
+                class="border border-gray-150 rounded overflow-hidden text-center row-span-3 pb-4 hover:transform hover:scale-105 hover:transition-all hover:duration-200">
+                <img class="object-cover w-full" src="/images/Untitled (4).png" alt="comp-set-up">
+                <h2 class="px-3 font-bold text-lg lg:text-xl  text-gray-700 mt-4 ">Service 3</h2>
+                <p class="px-5 mt-2 lg:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+                    dignissimos?</p>
+                <button class="bg-blue-500 hover:bg-blue-700 font-semibold px-4 py-2 rounded  text-white mt-3"
+                    type="button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="w-screen">
+        <h1 class="text-3xl lg:text-4xl font-bold m-5 md:m-6 text-center">Contact Us</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 justify-center align-middle px-8 md:py-2 lg:py-2 pb-4 md:mb-10">
+            <div>
+                <img class="object-cover hidden lg:block" src="/images/comp-set-up-2.png" alt="comp-set-up">
+            </div>
+            <div>
+                <form class="lg:p-4 md:m-5">
+                    <p class="font-bold text-xl text-center">Get In Touch</p>
+                    <div class="mb-4 lg:mb-2">
+                        <label for="name" class="block text-gray-700 font-bold mb-2 lg:text-lg">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4 lg:mb-2">
+                        <label for="password" class="block text-gray-700 font-bold mb-2 lg:text-lg">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div class="mb-4 lg:mb-2">
+                        <label for="message" class="block text-gray-700 font-bold mb-2 lg:text-lg">Message</label>
+                        <textarea id="message" placeholder="Enter your message"
+                            class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="grid grid-cols-1 px-8 gap-3 md:grid-cols-4 justify-center md:gap-8 py-4 w-screen bg-gray-300">
+        <div class="text-center md:col-span-2 box-border">
+            <h3 class="text-lg lg:text-xl font-bold">About Us</h3>
+            <p class="lg:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi consectetur, magni
+                dolorum ad ducimus
+                itaque quas impedit fuga aliquam quam.</p>
+        </div>
+        <div class="text-center box-border">
+            <h3 class="text-lg lg:text-xl font-bold">Contact Info</h3>
+            <p class="lg:text-lg">Town, City, Country</p>
+            <p class="lg:text-lg">example@gmail.com</p>
+            <p class="lg:text-lg">+254 712 345 678</p>
+        </div>
+        <div class="text-center box-border">
+            <h4 class="text-lg lg:text-xl font-bold">Follow Us</h4>
+            <div class="flex justify-center gap-3 align-center">
+                <a href="#" class="text-2xl lg:text-3xl text-blue-500 hover:transform hover:scale-125"><i
+                        class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="#" class="text-2xl lg:text-3xl text-fuchsia-500 hover:transform hover:scale-125"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" class="text-2xl lg:text-3xl text-blue-800 hover:transform hover:scale-125"><i
+                        class="fa fa-facebook-square" aria-hidden="true"></i></a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        const openModalButton = document.getElementById("openModal");
+        const closeModalButton = document.getElementById("closeModal");
+        const modal = document.getElementById("modal");
+
+        openModalButton.addEventListener("click", function () {
+            modal.classList.remove("hidden");
+        });
+
+        closeModalButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent form submission
+            modal.classList.add("hidden");
+        });
+    </script>
+
+</body>
+
+</html>
